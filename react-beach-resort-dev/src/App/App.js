@@ -12,18 +12,20 @@ import Error from "../Pages/Error";
 // import components
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
+import New from "../Pages/New";
 
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={New} />
+        <Route exact path="/home" component={Home} />
         <Route exact path="/rooms/" component={Room} />
         <Route exact path="/rooms/:slug" component={SingleRoom} />
         <Route component={Error} />
       </Switch>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
