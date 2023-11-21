@@ -4,7 +4,7 @@ import { BsPerson } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import { IoSearchOutline } from "react-icons/io5";
-import Logo from "../../assets/new/logo.png"
+import Logo from "../../assets/new/new/logo.png"
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const html = document.querySelector("html");
@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <Container state={isNavOpen ? 1 : 0}>
       <div className="brand">
-        <img src={Logo} alt="logo" style={{width: '250px', height: '100px'}} />
+        <img src={Logo} alt="logo" style={{width: '120px', height: '60px'}}/>
       </div>
       <div className="toggle">
         {isNavOpen ? (
@@ -64,6 +64,7 @@ const Container = styled.nav`
 width: 80%;
   display: flex;
   justify-content: space-between;
+  margin-left: 90px;
   align-items: center;
   .brand {
     img {
